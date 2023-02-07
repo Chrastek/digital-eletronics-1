@@ -4,4 +4,4 @@
 ### nadpis3
 #### _nadpis4_
 ##### nadpis5
-###### *nadpis6*
+###### **nadpis6**
