@@ -1,4 +1,4 @@
-# Lab 1: Micah Papaj
+# Lab 1: Michal Papaj
 
 ### De Morgan's laws
 
