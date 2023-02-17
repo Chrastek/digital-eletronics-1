@@ -37,7 +37,7 @@
                 (s_B_less_A    = '0'))
         -- If false, then report an error
         -- If true, then do not report anything
-        report "Input combination 00, 00 FAILED" severity error;
+        report "Input combination 1000, 0000 FAILED" severity error;
 
 
         -- WRITE OTHER TEST CASES HERE
