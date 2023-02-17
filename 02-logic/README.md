@@ -6,7 +6,7 @@
 
    Greater than:
 
-   ![K-maps](images/kmap_empty.png)
+   ![bvicea](https://user-images.githubusercontent.com/124675666/219621612-75571a42-b2b4-4982-a7c8-e4b679347502.png)
 
    Less than:
 
