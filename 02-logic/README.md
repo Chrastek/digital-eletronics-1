@@ -32,18 +32,30 @@
         -- 08 last two digits of id - a=0000,b=1000
         s_b <= "1000"; s_a <= "0000"; wait for 100 ns;
         -- ... and its expected outputs
-        assert ((s_B_greater_A = '0') and
-                (s_B_equals_A  = '1') and
+        assert ((s_B_greater_A = '1') and
+                (s_B_equals_A  = '0') and
                 (s_B_less_A    = '0'))
         -- If false, then report an error
         -- If true, then do not report anything
-        report "Input combination 1000, 0000 FAILED" severity error;
+        report "Input combination 0000, 1000 FAILED" severity error;
 
 
         -- WRITE OTHER TEST CASES HERE
         s_b <= "0000"; s_a <= "0000"; wait for 100 ns;
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '1') and
+                (s_B_less_A    = '0'))
+        report "Input combination 0000, 0000 FAILED" severity error;
         s_b <= "0000"; s_a <= "1111"; wait for 100 ns;
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '0') and
+                (s_B_less_A    = '0'))
+        report "Input combination 1111, 0000 FAILED" severity error;
         s_b <= "1111"; s_a <= "0000"; wait for 100 ns;
+        assert ((s_B_greater_A = '1') and
+                (s_B_equals_A  = '0') and
+                (s_B_less_A    = '0'))
+        report "Input combination 0000, 1111 FAILED" severity error;
         
 
         -- Report a note at the end of stimulus process
