@@ -28,7 +28,22 @@
    ```vhdl
    --------------------------------------------------------------------
    -- Experiments on your own: LED(7:4) indicators
+    p_stimulus : process
+    begin
+        report "Stimulus process started";
 
+        -- First test case
+        SW <= "0000"; wait for 50 ns;
+        assert (LED(4) = '0')
+        report "LED(4) indicator FAILED" severity error;
+
+
+        -- WRITE OTHER TEST CASES HERE
+
+
+        report "Stimulus process finished";
+        wait;
+    end process p_stimulus;
    -- Turn LED(4) on if input value is equal to 0, ie "0000"
    -- LED(4) <= `0` when WRITE YOUR CODE HERE
 
