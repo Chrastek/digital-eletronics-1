@@ -44,7 +44,7 @@ with SW select
         '1' when "0100",
         '1' when "1000",
         '0' when others;
-
+```
 3. Screenshot with simulated time waveforms for LED(7:4). Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
    ![your figure]()
