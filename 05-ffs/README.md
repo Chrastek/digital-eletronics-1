@@ -21,11 +21,13 @@ begin
             if (k = '0') then
                if (j = '1') then
                   s_q  <= '1';
+               end if;
             else
                if (j = '0') then
                   s_q  <= '0';
                else
                   s_q  <=  not s_q;
+               end if;
             end if;    
         end if;
     end process p_t_ff_rst;
