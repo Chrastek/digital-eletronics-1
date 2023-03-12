@@ -11,14 +11,28 @@
 1. Listing of VHDL architecture for JK-type flip-flop. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
-architecture Behavioral of jk_ff_rst is
+architecture behavioral of t_ff_rst is
+    signal s_q : std_logic;
+begin
 
-    -- WRITE YOUR CODE HERE
+    p_t_ff_rst : process (clk)
+    begin
+        if rising_edge(clk) then
+        -- WRITE YOUR CODE HERE
+            if (rst = '1') then
+                s_q     <= '0';
+            elsif (t = '0') then
+                s_q  <= s_q ;
+            else
+                s_q  <= not s_q;
+            end if;    
+        end if;
+    end process p_t_ff_rst;
 
     -- Output ports are permanently connected to local signal
-    q     <= sig_q;
-    q_bar <= not sig_q;
-end architecture Behavioral;
+    q     <= s_q;
+    q_bar <= not s_q;
+end architecture behavioral;
 ```
 
 ### Shift register
