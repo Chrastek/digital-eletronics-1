@@ -1,4 +1,4 @@
-# Lab 6 INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
+# Lab 6 Michal Papaj
 
 ### Bidirectional counter
 
@@ -36,5 +36,5 @@
 
 1. Image of the top layer structure including both counters, ie a 4-bit bidirectional counter from Part 4 and a 12-bit counter with a 10 ms time base from Experiments on your own. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
 
-   ![obr](https://user-images.githubusercontent.com/124675666/226164766-5f8ecb3f-9955-44d4-882e-3da51f6da490.png)
+   ![obr](https://user-images.githubusercontent.com/124675666/226164837-293a0df4-fbb5-42ed-9230-9b751c311570.png)
 
