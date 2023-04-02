@@ -11,9 +11,10 @@
     -- clock_enable entirely controls the s_state signal by
     -- CASE statement.
     --------------------------------------------------------
-    p_traffic_fsm : process(clk) is
-    begin
-        if (rising_edge(clk)) then
+   p_traffic_fsm : process (clk) is
+  begin
+
+    if (rising_edge(clk)) then
       if (rst = '1') then                    -- Synchronous reset
         sig_state <= WEST_STOP;              -- Init state
         sig_cnt   <= c_ZERO;                 -- Clear delay counter
